@@ -3,8 +3,9 @@ local _G = _G
 
 local LIF = _G.LibStub("LibIconFonts-1.0", true)
 
--- Preview available at octicons.github.com
-local function FontAwesome(font)
+-- Download: https://fontawesome.com/v4.7.0/
+-- Preview: https://fontawesome.com/v4.7.0/cheatsheet/
+local function FontAwesome()
     local icons = {
         ["500px"] = "", --f26e
         ["address-book"] = "", --f2b9
@@ -795,9 +796,8 @@ local function FontAwesome(font)
     icons["yc"] = "" --f23b
     icons["yc-square"] = "" --f1d4
     icons["yen"] = "" --f157
-    
-    font.icons = icons
+
     return icons
 end
 
-LIF:RegisterIconFont("FontAwesome", FontAwesome)
+LIF:RegisterIconFont("FontAwesome-4.7", FontAwesome)

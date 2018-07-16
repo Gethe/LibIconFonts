@@ -13,17 +13,18 @@ local fonts = {}
 -- Retrieve a specific icon font
 -- @param fontName The name of the font
 function lib:GetIconFont(fontName)
-    local font = fonts[fontName]
-    assert(font, ("%s has not been registered."):format(fontName))
-    return font.icons or font.func(font)
+    assert(fonts[fontName], fontName.."has not been registered.")
+    if type(fonts[fontName]) ~= "table" then
+        fonts[fontName] = fonts[fontName]()
+    end
+    return fonts[fontName]
 end
 
 -- Register an icon font
 -- @param fontName The name of the font
 -- @param fontFunc A function that returns a table containing the font icons
--- @param ... A list of supported version for the font
-function lib:RegisterIconFont(fontName, fontFunc, ...)
-    local font = fonts[fontName] or {}
-    font.func = fontFunc
-    fonts[fontName] = font
+function lib:RegisterIconFont(fontName, fontFunc)
+    assert(not fonts[fontName], fontName.."has already been registered.")
+    assert(type(fontFunc) == "function", "fontFunc must be a function, got "..type(fontFunc))
+    fonts[fontName] = fontFunc
 end
