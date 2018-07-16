@@ -1,0 +1,8 @@
+## Interface: 80000
+## Title: Lib: IconFonts
+## Notes: Provides easy access to icon font glyphs
+## Author: Gethe
+
+LibStub\LibStub.lua
+lib.xml
+tests.lua

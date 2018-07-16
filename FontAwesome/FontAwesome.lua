@@ -1,7 +1,7 @@
 -- Lua Globals --
 local _G = _G
 
-local LIF = _G.LibStub("LibIconFonts-1.0", true)
+local LIF = _G.LibStub("LibIconFonts-1.0")
 
 -- Download: https://fontawesome.com/v4.7.0/
 -- Preview: https://fontawesome.com/v4.7.0/cheatsheet/
