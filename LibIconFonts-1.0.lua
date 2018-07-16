@@ -1,6 +1,5 @@
 -- Lua Globals --
-local _G = _G
-local assert = _G.assert
+-- luacheck: globals assert type
 
 local MAJOR, MINOR = "LibIconFonts-1.0", 1 -- Should be manually increased
 assert(_G.LibStub, MAJOR .. " requires LibStub")
