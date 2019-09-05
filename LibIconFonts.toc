@@ -6,7 +6,7 @@
 ## X-Curse-Project-ID: 339865
 
 #@non-debug@
-#LibStub\LibStub.lua
+# LibStub\LibStub.lua
 #@end-non-debug@
 lib.xml
 tests.lua
