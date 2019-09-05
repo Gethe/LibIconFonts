@@ -1,0 +1,13 @@
+package-as: LibIconFonts
+
+ignore:
+    - *.sublime*
+
+externals:
+    LibStub:
+        url: https://repos.wowace.com/wow/ace3/trunk/LibStub
+        tag: latest
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
