@@ -1,4 +1,4 @@
-## Interface: 80200
+## Interface: 80200, 120000, 120001
 ## Title: Lib: IconFonts
 ## Notes: Provides easy access to icon font glyphs
 ## Author: Gethe
